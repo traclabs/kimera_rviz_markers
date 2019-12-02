@@ -5,6 +5,9 @@ find_package(catkin_simple REQUIRED)
 
 catkin_simple()
 
+# TRACLabs line to compile
+add_definitions(-std=c++11) # -Wall
+
 cs_add_library(${PROJECT_NAME}
   src/utils.cpp
   src/${PROJECT_NAME}.cpp)
